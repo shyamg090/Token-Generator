@@ -14,9 +14,9 @@ import RenderTokens from './RenderTokens';
 const TokenGenerator = () => {
 
     const [blueTokenSettings, setBlueTokenSettings] = useState({
-        blueTokenCount: 0,
+        blueTokenCount: null,
         bluePrefix: '',
-        blueTokensPerRow: 0
+        blueTokensPerRow: null
     })
 
     const handleBlueTokenChange = (e) => {
@@ -29,9 +29,9 @@ const TokenGenerator = () => {
     };
 
     const [redTokenSettings, setRedTokenSettings] = useState({
-        redTokenCount: 0,
+        redTokenCount: null,
         redPrefix: '',
-        redTokensPerRow: 0
+        redTokensPerRow: null
     })
 
     const handleRedTokenChange = (e) => {
