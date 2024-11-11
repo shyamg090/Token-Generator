@@ -29,9 +29,9 @@ const TokenGenerator = () => {
     };
 
     const [redTokenSettings, setRedTokenSettings] = useState({
-        redTokenCount: null,
+        redTokenCount: '',
         redPrefix: '',
-        redTokensPerRow: null
+        redTokensPerRow: ''
     })
 
     const handleRedTokenChange = (e) => {
@@ -91,7 +91,7 @@ const TokenGenerator = () => {
                         label="Number of blue tokens"
                         type="number"
                         variant='outlined'
-                        value={blueTokenSettings.blueTokenCount}
+                        value={blueTokenSettings.blueTokenCount || ''}
                         onChange={handleBlueTokenChange}
                     />
                 </Grid2>
@@ -101,7 +101,7 @@ const TokenGenerator = () => {
                         required
                         name='bluePrefix'
                         label="Prefix for blue tokens"
-                        value={blueTokenSettings.bluePrefix}
+                        value={blueTokenSettings.bluePrefix || ''}
                         onChange={handleBlueTokenChange}
                     />
                 </Grid2>
@@ -112,7 +112,7 @@ const TokenGenerator = () => {
                         name='blueTokensPerRow'
                         label="Blue tokens per row"
                         type="number"
-                        value={blueTokenSettings.blueTokensPerRow}
+                        value={blueTokenSettings.blueTokensPerRow  || ''}
                         onChange={handleBlueTokenChange}
                     />
                 </Grid2>
@@ -125,7 +125,7 @@ const TokenGenerator = () => {
                         name='redTokenCount'
                         label="Number of red tokens"
                         type="number"
-                        value={redTokenSettings.redTokenCount}
+                        value={redTokenSettings.redTokenCount || ''}
                         onChange={handleRedTokenChange}
                     />
                 </Grid2>
@@ -135,7 +135,7 @@ const TokenGenerator = () => {
                         required
                         name='redPrefix'
                         label="Prefix for red tokens"
-                        value={redTokenSettings.redPrefix}
+                        value={redTokenSettings.redPrefix || ''}
                         onChange={handleRedTokenChange}
                     />
                 </Grid2>
@@ -146,7 +146,7 @@ const TokenGenerator = () => {
                         name='redTokensPerRow'
                         label="Red tokens per row"
                         type="number"
-                        value={redTokenSettings.redTokensPerRow}
+                        value={redTokenSettings.redTokensPerRow || ''}
                         onChange={handleRedTokenChange}
                     />
                 </Grid2>
